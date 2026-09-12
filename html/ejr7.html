@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Disabled y readonly</title>
+  <link
+    rel="stylesheet"
+    href="../css/ejr7.css"
+  >
+</head>
+<body>
+
+  <main class="form-page">
+    <section class="form-section">
+      <div class="form-container">
+
+        <header class="form-header">
+          <span class="eyebrow">
+            ESTADOS
+          </span>
+          <h1>
+            Campos disabled y readonly
+          </h1>
+          <p>
+            Este formulario muestra ambos estados junto con un campo editable normal para comparar su comportamiento.
+          </p>
+        </header>
+
+        <div class="explanation">
+          <h2>
+            ¿Cuál es la diferencia?
+          </h2>
+          <p>
+            <strong>disabled</strong> impide la interacción con el campo y, por lo general, su valor no se envía junto con el formulario. Se usa en campos temporalmente no disponibles.
+          </p>
+          <p>
+            <strong>readonly</strong> permite ver y copiar el valor, pero no editarlo, y ese valor sí se envía con el formulario. Se usa en datos calculados o predefinidos.
+          </p>
+        </div>
+
+        <form
+          class="contact-form"
+          action="#"
+          method="post"
+        >
+
+          <div class="form-field">
+            <label for="nombre">
+              Nombre
+            </label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Escriba su nombre"
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="pais">
+              País
+            </label>
+            <input
+              type="text"
+              id="pais"
+              name="pais"
+              value="Colombia"
+              readonly
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="plan">
+              Plan actual
+            </label>
+            <input
+              type="text"
+              id="plan"
+              name="plan"
+              value="No disponible"
+              disabled
+            >
+          </div>
+
+          <div class="form-actions">
+            <button
+              type="submit"
+              class="button button-primary"
+            >
+              Guardar
+            </button>
+            <button
+              type="reset"
+              class="button button-secondary"
+            >
+              Limpiar
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

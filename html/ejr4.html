@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Solicitud laboral</title>
+  <link
+    rel="stylesheet"
+    href="../css/ejr4.css"
+  >
+</head>
+<body>
+
+  <main class="form-page">
+    <section class="form-section">
+      <div class="form-container">
+
+        <header class="form-header">
+          <span class="eyebrow">
+            EMPLEO
+          </span>
+          <h1>
+            Solicitud de empleo
+          </h1>
+          <p>
+            Complete sus datos y adjunte su hoja de vida. Los campos marcados con
+            <strong>*</strong> son obligatorios.
+          </p>
+        </header>
+
+        <form
+          class="contact-form"
+          action="#"
+          method="post"
+        >
+
+          <div class="form-field">
+            <label for="nombre">
+              Nombre completo
+              <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              autocomplete="name"
+              placeholder="Laura Martínez"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="email">
+              Correo
+              <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              placeholder="nombre@correo.com"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="telefono">
+              Teléfono
+            </label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              autocomplete="tel"
+              placeholder="+57 300 000 0000"
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="puesto">
+              Puesto de interés
+              <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <select
+              id="puesto"
+              name="puesto"
+              required
+            >
+              <option
+                value=""
+                selected
+                disabled
+              >
+                Seleccione un puesto
+              </option>
+              <option value="desarrollador">
+                Desarrollador
+              </option>
+              <option value="disenador">
+                Diseñador
+              </option>
+              <option value="analista">
+                Analista
+              </option>
+              <option value="otro">
+                Otro
+              </option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="experiencia">
+              Años de experiencia
+            </label>
+            <input
+              type="number"
+              id="experiencia"
+              name="experiencia"
+              min="0"
+              max="50"
+              step="1"
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="cv">
+              Hoja de vida (CV)
+              <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="file"
+              id="cv"
+              name="cv"
+              accept=".pdf,.doc,.docx"
+              required
+            >
+            <small class="field-help">
+              Formatos aceptados: PDF, DOC o DOCX.
+            </small>
+          </div>
+
+          <div class="form-field">
+            <label for="carta">
+              Carta de presentación
+            </label>
+            <textarea
+              id="carta"
+              name="carta"
+              rows="6"
+              maxlength="800"
+              placeholder="Cuéntenos por qué le interesa el puesto..."
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button
+              type="submit"
+              class="button button-primary"
+            >
+              Enviar solicitud
+            </button>
+            <button
+              type="reset"
+              class="button button-secondary"
+            >
+              Limpiar
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

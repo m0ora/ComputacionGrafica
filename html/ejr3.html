@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Encuesta</title>
+  <link
+    rel="stylesheet"
+    href="../css/ejr3.css"
+  >
+</head>
+<body>
+
+  <main class="form-page">
+    <section class="form-section">
+      <div class="form-container">
+
+        <header class="form-header">
+          <span class="eyebrow">
+            ENCUESTA
+          </span>
+          <h1>
+            Cuéntenos su experiencia
+          </h1>
+          <p>
+            Su opinión nos ayuda a mejorar. La encuesta toma menos de un minuto.
+          </p>
+        </header>
+
+        <form
+          class="contact-form"
+          action="#"
+          method="post"
+        >
+
+          <fieldset>
+            <legend>
+              ¿Qué tan satisfecho está con nuestro servicio?
+            </legend>
+            <div class="choice-list">
+              <label class="choice">
+                <input
+                  type="radio"
+                  name="satisfaccion"
+                  value="muy-satisfecho"
+                  checked
+                >
+                <span>Muy satisfecho</span>
+              </label>
+              <label class="choice">
+                <input
+                  type="radio"
+                  name="satisfaccion"
+                  value="satisfecho"
+                >
+                <span>Satisfecho</span>
+              </label>
+              <label class="choice">
+                <input
+                  type="radio"
+                  name="satisfaccion"
+                  value="neutral"
+                >
+                <span>Neutral</span>
+              </label>
+              <label class="choice">
+                <input
+                  type="radio"
+                  name="satisfaccion"
+                  value="insatisfecho"
+                >
+                <span>Insatisfecho</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              ¿Qué aspectos destacaría?
+            </legend>
+            <div class="choice-list">
+              <label class="choice">
+                <input
+                  type="checkbox"
+                  name="aspectos"
+                  value="atencion"
+                >
+                <span>Atención al cliente</span>
+              </label>
+              <label class="choice">
+                <input
+                  type="checkbox"
+                  name="aspectos"
+                  value="precio"
+                >
+                <span>Precio</span>
+              </label>
+              <label class="choice">
+                <input
+                  type="checkbox"
+                  name="aspectos"
+                  value="calidad"
+                >
+                <span>Calidad</span>
+              </label>
+              <label class="choice">
+                <input
+                  type="checkbox"
+                  name="aspectos"
+                  value="rapidez"
+                >
+                <span>Rapidez</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <label for="recomendacion">
+              ¿Qué probabilidad hay de que nos recomiende? (1 a 10)
+            </label>
+            <input
+              type="range"
+              id="recomendacion"
+              name="recomendacion"
+              min="1"
+              max="10"
+              value="5"
+            >
+          </div>
+
+          <div class="form-actions">
+            <button
+              type="submit"
+              class="button button-primary"
+            >
+              Enviar encuesta
+            </button>
+            <button
+              type="reset"
+              class="button button-secondary"
+            >
+              Limpiar
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

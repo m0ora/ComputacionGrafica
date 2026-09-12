@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Dos columnas responsive</title>
+  <link
+    rel="stylesheet"
+    href="../css/ejr6.css"
+  >
+</head>
+<body>
+
+  <main class="form-page">
+    <section class="form-section">
+      <div class="form-container">
+
+        <header class="form-header">
+          <span class="eyebrow">
+            CONTACTO
+          </span>
+          <h1>
+            Formulario en dos columnas
+          </h1>
+          <p>
+            En pantallas grandes los campos se agrupan de a dos. En móvil se apilan en una sola columna.
+          </p>
+        </header>
+
+        <form
+          class="contact-form"
+          action="#"
+          method="post"
+        >
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="nombre">
+                Nombre
+                <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                autocomplete="given-name"
+                required
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="apellido">
+                Apellido
+                <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                autocomplete="family-name"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="email">
+                Correo
+                <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="telefono">
+                Teléfono
+              </label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                autocomplete="tel"
+              >
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="ciudad">
+                Ciudad
+              </label>
+              <input
+                type="text"
+                id="ciudad"
+                name="ciudad"
+                autocomplete="address-level2"
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="empresa">
+                Empresa
+              </label>
+              <input
+                type="text"
+                id="empresa"
+                name="empresa"
+                autocomplete="organization"
+              >
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="mensaje">
+              Mensaje
+            </label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="6"
+              maxlength="800"
+              placeholder="Escriba su mensaje..."
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button
+              type="submit"
+              class="button button-primary"
+            >
+              Enviar
+            </button>
+            <button
+              type="reset"
+              class="button button-secondary"
+            >
+              Limpiar
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
