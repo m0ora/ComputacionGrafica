@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Personaliza</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+    <div class="header-inner">
+
+      <a class="logo" href="index.html">RetroSound</a>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#catalogo">Catálogo</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#pedido">Tu pedido</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+        <section class="section">
+      <div class="section-inner">
+
+        <header class="section-header">
+          <h1>Personaliza tu propio CD o vinilo</h1>
+          <p>
+            Tú eliges las canciones y la imagen. Nosotros armamos el
+            disco. Llena el formulario con tu lista de canciones y sube
+            la imagen que quieres en la portada.
+          </p>
+        </header>
+
+      </div>
+    </section>
+
+        <section class="section section-alt" id="como-funciona">
+      <div class="section-inner">
+
+        <header class="section-header">
+          <h2>Cómo funciona</h2>
+        </header>
+
+        <div class="grid-3">
+
+          <article class="card">
+            <span class="paso-numero">1</span>
+            <h3>Elige el formato</h3>
+            <p>CD o vinilo, con el color y el estilo que prefieras.</p>
+          </article>
+
+          <article class="card">
+            <span class="paso-numero">2</span>
+            <h3>Envía tus canciones</h3>
+            <p>Escribe la lista de temas o comparte el enlace de tu playlist.</p>
+          </article>
+
+          <article class="card">
+            <span class="paso-numero">3</span>
+            <h3>Sube tu imagen</h3>
+            <p>Esa imagen será la portada de tu disco.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+        <section class="section" id="pedido">
+      <div class="section-inner">
+
+        <header class="section-header">
+          <h2>Tu pedido</h2>
+          <p>
+            Los campos marcados con <strong>*</strong> son obligatorios.
+          </p>
+        </header>
+
+        <div class="form-container">
+
+                    <form class="contact-form" action="#" method="post">
+
+                        <section class="form-block">
+              <h2>Tus datos</h2>
+
+                            <div class="form-grid">
+
+                <div class="form-field">
+                  <label for="nombre">
+                    Nombre
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    autocomplete="given-name"
+                    placeholder="Laura"
+                    required
+                  >
+                </div>
+
+                <div class="form-field">
+                  <label for="apellido">
+                    Apellido
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    autocomplete="family-name"
+                    placeholder="Martínez"
+                    required
+                  >
+                </div>
+
+              </div>
+
+                            <div class="form-grid">
+
+                <div class="form-field">
+                  <label for="email">
+                    Correo electrónico
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="nombre@correo.com"
+                    required
+                  >
+                </div>
+
+                <div class="form-field">
+                  <label for="telefono">Teléfono</label>
+                                    <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    autocomplete="tel"
+                    placeholder="+57 300 000 0000"
+                  >
+                </div>
+
+              </div>
+            </section>
+
+                        <section class="form-block">
+              <h2>Tu disco</h2>
+
+                            <fieldset>
+                <legend>Formato</legend>
+                <div class="choice-list">
+
+                  <label class="choice">
+                    <input type="radio" name="formato" value="cd" checked>
+                    <span>CD</span>
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="formato" value="vinilo">
+                    <span>Vinilo</span>
+                  </label>
+
+                </div>
+              </fieldset>
+
+                            <div class="form-grid">
+
+                <div class="form-field">
+                  <label for="album">
+                    Nombre del álbum
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="album"
+                    name="album"
+                    placeholder="Ej. Mis noches de 1986"
+                    maxlength="60"
+                    required
+                  >
+                </div>
+
+                <div class="form-field">
+                  <label for="artista">Nombre del artista</label>
+                  <input
+                    type="text"
+                    id="artista"
+                    name="artista"
+                    placeholder="Ej. Laura M."
+                    maxlength="60"
+                  >
+                </div>
+
+              </div>
+
+                            <div class="form-grid">
+
+                <div class="form-field">
+                  <label for="genero">Género principal</label>
+                                    <input
+                    type="text"
+                    id="genero"
+                    name="genero"
+                    list="generos"
+                    placeholder="Escribe o elige uno"
+                  >
+                  <datalist id="generos">
+                    <option value="Rock de los 80">
+                    <option value="Pop retro">
+                    <option value="Emo">
+                    <option value="New wave">
+                    <option value="Alternativo">
+                  </datalist>
+                </div>
+
+                <div class="form-field">
+                  <label for="cantidad">
+                    Cantidad de canciones
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                                    <input
+                    type="number"
+                    id="cantidad"
+                    name="cantidad"
+                    min="1"
+                    max="20"
+                    step="1"
+                    required
+                  >
+                </div>
+
+              </div>
+
+                            <div class="form-field">
+                <label for="color">Color principal de la portada</label>
+                <input
+                  type="color"
+                  id="color"
+                  name="color"
+                  value="#d879a8"
+                >
+              </div>
+            </section>
+
+                        <section class="form-block">
+              <h2>Canciones e imagen</h2>
+
+                            <div class="form-field">
+                <label for="canciones">
+                  Lista de canciones
+                  <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <textarea
+                  id="canciones"
+                  name="canciones"
+                  rows="8"
+                  maxlength="1500"
+                  placeholder="Una por línea. Ej: Artista - Nombre de la canción"
+                  aria-describedby="canciones-ayuda"
+                  required
+                ></textarea>
+                                <small id="canciones-ayuda" class="field-help">
+                  Escribe una canción por línea. Máximo 1500 caracteres.
+                </small>
+              </div>
+
+                            <div class="form-field">
+                <label for="playlist">Enlace a tu playlist (opcional)</label>
+                <input
+                  type="url"
+                  id="playlist"
+                  name="playlist"
+                  placeholder="https://..."
+                >
+              </div>
+
+                            <div class="form-field">
+                <label for="imagen">
+                  Imagen de portada
+                  <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="file"
+                  id="imagen"
+                  name="imagen"
+                  accept="image/*"
+                  aria-describedby="imagen-ayuda"
+                  required
+                >
+                <small id="imagen-ayuda" class="field-help">
+                  Usa una imagen cuadrada para que se vea mejor.
+                </small>
+              </div>
+            </section>
+
+                        <label class="choice">
+              <input type="checkbox" name="terminos" required>
+              <span>
+                Acepto el tratamiento de la información suministrada.
+              </span>
+            </label>
+
+                        <div class="actions">
+              <button type="submit" class="button button-primary">
+                Enviar pedido
+              </button>
+              <button type="reset" class="button button-secondary">
+                Limpiar
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="site-footer">
+
+    <div class="footer-grid">
+
+      <section>
+        <h3>Ubicación</h3>
+        <p>Colombia · envíos a todo el país</p>
+      </section>
+
+      <section>
+        <h3>Síguenos</h3>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+      </section>
+
+      <section>
+        <h3>Formatos</h3>
+        <p>CD · Vinilo · Ediciones personalizadas</p>
+      </section>
+
+    </div>
+
+    <p class="footer-bottom">© RetroSound · CDs y vinilos retro</p>
+
+  </footer>
+
+</body>
+</html>
