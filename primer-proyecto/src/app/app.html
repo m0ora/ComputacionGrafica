@@ -1,0 +1,55 @@
+<router-outlet />
+
+<!-- ================= PRIMERA PARTE: etiquetas con el brand global ================= -->
+<section class="parte-1">
+  <h2>Taller 4: Práctica de estilos en Angular</h2>
+
+  <p>Párrafo de 16px (1rem), color #0093FF y fuente Arial.</p>
+
+  <p class="parrafo-nerko">Párrafo de 12px, color #c500ff y fuente Nerko One (Google Fonts).</p>
+
+  <ul>
+    <li><a href="https://angular.dev" target="_blank">Angular</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">CSS en MDN</a></li>
+    <li><a href="https://fonts.google.com" target="_blank">Google Fonts</a></li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Productos</th>
+        <th>Existencias</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Iphone</td>
+        <td>10</td>
+        <td>$ 2.000.000</td>
+      </tr>
+      <tr>
+        <td>Mouse</td>
+        <td>100</td>
+        <td>$ 50.000</td>
+      </tr>
+      <tr>
+        <td>PC Gamer</td>
+        <td>2</td>
+        <td>$ 3.000.000</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ================= SEGUNDA PARTE: sitio con COMPONENTES ================= -->
+<div class="contenedor">
+  <app-header />
+
+  <div class="cuerpo">
+    <app-sidebar />
+    <app-content />
+  </div>
+
+  <app-footer />
+</div>

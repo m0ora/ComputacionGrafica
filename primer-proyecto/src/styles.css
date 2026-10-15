@@ -1,0 +1,120 @@
+/* ==========================================================
+   Taller 4 - Brand de estilo personalizado (estilos globales)
+   Todo se controla desde las variables de :root
+   ========================================================== */
+
+:root {
+  /* Fuentes */
+  --fuente-base: Arial, Helvetica, sans-serif;
+  --fuente-nerko: 'Nerko One', cursive;
+
+  /* Colores de texto */
+  --color-titulo: #ff4900;
+  --color-parrafo-1: #0093ff;
+  --color-parrafo-2: #c500ff;
+
+  /* Colores de los vínculos */
+  --color-link: #001bff;
+  --color-link-visited: #4caf50;
+  --color-link-hover: #ff6600;
+
+  /* Colores de la tabla */
+  --tabla-encabezado-fondo: #000000;
+  --tabla-encabezado-texto: #ffffff;
+  --tabla-fila-clara-fondo: #bec1c3;
+  --tabla-fila-clara-texto: #000000;
+  --tabla-fila-central-fondo: #045795;
+  --tabla-fila-central-texto: #ffffff;
+
+  /* Tamaños */
+  --tam-titulo: 2rem;
+  --tam-parrafo-1: 1rem;      /* 16px */
+  --tam-parrafo-2: 12px;
+  --tam-tabla: 1.5rem;
+}
+
+/* ---------- html y body ---------- */
+html {
+  font-size: 16px;
+  font-family: var(--fuente-base);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fuente-base);
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* ---------- título h2 ---------- */
+h2 {
+  color: var(--color-titulo);
+  font-size: var(--tam-titulo);
+  font-family: var(--fuente-base);
+}
+
+/* ---------- párrafos ---------- */
+p {
+  font-family: var(--fuente-base);
+  font-size: var(--tam-parrafo-1);
+  color: var(--color-parrafo-1);
+}
+
+/* Segundo párrafo: 12px, #c500ff, Nerko One */
+p.parrafo-nerko {
+  font-family: var(--fuente-nerko);
+  font-size: var(--tam-parrafo-2);
+  color: var(--color-parrafo-2);
+}
+
+/* ---------- vínculos ---------- */
+a {
+  color: var(--color-link);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+/* ---------- tabla ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--fuente-base);
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 4px 8px;
+  text-align: left;
+}
+
+/* Encabezado */
+th {
+  background-color: var(--tabla-encabezado-fondo);
+  color: var(--tabla-encabezado-texto);
+  font-size: var(--tam-tabla);
+}
+
+/* Primera y tercera fila del cuerpo */
+tbody tr:nth-child(odd) {
+  background-color: var(--tabla-fila-clara-fondo);
+  color: var(--tabla-fila-clara-texto);
+  font-size: var(--tam-tabla);
+}
+
+/* Fila central */
+tbody tr:nth-child(even) {
+  background-color: var(--tabla-fila-central-fondo);
+  color: var(--tabla-fila-central-texto);
+  font-size: var(--tam-tabla);
+}

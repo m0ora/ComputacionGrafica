@@ -1,0 +1,9 @@
+:host { display: block; }
+
+.buscador input {
+  width: 180px;
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid #7f7f7f;
+  background-color: #ffffff;
+}

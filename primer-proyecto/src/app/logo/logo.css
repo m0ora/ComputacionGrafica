@@ -1,0 +1,12 @@
+:host { display: block; }
+
+.logo {
+  background-color: #ffc000;
+  color: #ffffff;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bf9000;
+}
