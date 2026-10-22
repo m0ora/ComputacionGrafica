@@ -1,0 +1,28 @@
+:host { display: block; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 20px;
+  background-color: #ffc000;
+  color: #ffffff;
+}
+
+.etiqueta {
+  font-size: 0.9rem;
+}
+
+.footer-1,
+.footer-2,
+.footer-3 {
+  width: 150px;
+  height: 55px;
+  background-color: #a6a6a6;
+  border: 1px solid #7f7f7f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.9rem;
+}

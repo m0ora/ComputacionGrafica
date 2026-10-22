@@ -1,0 +1,15 @@
+:host { display: block; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #a6a6a6;
+  color: #ffffff;
+}
+
+.titulo-seccion {
+  flex: 1;
+  text-align: center;
+}

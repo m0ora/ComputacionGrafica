@@ -1,0 +1,12 @@
+:host { display: block; }
+
+.content {
+  min-height: 300px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #70ad47;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}

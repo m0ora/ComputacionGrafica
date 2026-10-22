@@ -1,0 +1,33 @@
+.primera-parte {
+  margin-bottom: 2rem;
+}
+
+.titulo-parte {
+  margin-top: 2rem;
+}
+
+/* Contenedor principal: contiene header, sidebar + content, y footer */
+.contenedor {
+  background-color: #4472c4;
+  padding-bottom: 8px;
+}
+
+/* Sidebar a la izquierda y content a la derecha */
+.cuerpo {
+  display: flex;
+  gap: 10px;
+  padding: 8px;
+}
+
+.cuerpo app-sidebar {
+  flex: 0 0 auto;
+}
+
+.cuerpo app-content {
+  flex: 1;
+}
+
+app-footer {
+  display: block;
+  margin: 0 8px;
+}

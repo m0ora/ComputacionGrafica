@@ -1,0 +1,117 @@
+/* Fuente "Nerko One" importada desde el CDN de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+/* ============================================================
+   BRAND DE ESTILO PERSONALIZADO (variables globales)
+   ============================================================ */
+:root {
+  /* Colores */
+  --color-titulo: #ff4900;
+  --color-parrafo-1: #0093ff;
+  --color-parrafo-2: #c500ff;
+  --color-link: #001bff;
+  --color-link-visitado: #4caf50;
+  --color-link-hover: #ff6600;
+  --color-th-fondo: #000000;
+  --color-th-texto: #ffffff;
+  --color-fila-clara-fondo: #bec1c3;
+  --color-fila-clara-texto: #000000;
+  --color-fila-central-fondo: #045795;
+  --color-fila-central-texto: #ffffff;
+  --color-fondo-pagina: #ffffff;
+  --color-texto-pagina: #000000;
+
+  /* Tamaños de fuente */
+  --size-titulo: 2rem;
+  --size-parrafo-1: 1rem;
+  --size-parrafo-2: 12px;
+  --size-tabla: 1.5rem;
+
+  /* Fuentes */
+  --fuente-base: Arial, Helvetica, sans-serif;
+  --fuente-nerko: 'Nerko One', cursive;
+}
+
+/* ---------- html y body ---------- */
+html {
+  font-size: 16px;
+  background-color: var(--color-fondo-pagina);
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: var(--fuente-base);
+  color: var(--color-texto-pagina);
+  background-color: var(--color-fondo-pagina);
+}
+
+/* ---------- título <h2> ---------- */
+h2 {
+  color: var(--color-titulo);
+  font-size: var(--size-titulo);
+}
+
+/* ---------- párrafo <p> ---------- */
+p {
+  color: var(--color-parrafo-1);
+  font-size: var(--size-parrafo-1);
+  font-family: Arial, sans-serif;
+}
+
+/* Segundo párrafo: 12px, color #c500ff y fuente Nerko One */
+p.parrafo-nerko {
+  color: var(--color-parrafo-2);
+  font-size: var(--size-parrafo-2);
+  font-family: var(--fuente-nerko);
+}
+
+/* ---------- vínculos <a href> ---------- */
+a {
+  color: var(--color-link);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-link-visitado);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+/* ---------- tabla <table><tr><th> ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.25rem 0.5rem;
+  text-align: left;
+  border: 1px solid #000000;
+}
+
+/* Encabezado: fondo #000000, letra blanca, 1.5rem */
+tr th {
+  background-color: var(--color-th-fondo);
+  color: var(--color-th-texto);
+  font-size: var(--size-tabla);
+}
+
+/* Primera y tercera fila del cuerpo: fondo #bec1c3, letra negra, 1.5rem */
+tbody tr:nth-child(odd) {
+  background-color: var(--color-fila-clara-fondo);
+  color: var(--color-fila-clara-texto);
+  font-size: var(--size-tabla);
+}
+
+/* Fila central: fondo #045795, letra blanca, 1.5rem */
+tbody tr:nth-child(even) {
+  background-color: var(--color-fila-central-fondo);
+  color: var(--color-fila-central-texto);
+  font-size: var(--size-tabla);
+}

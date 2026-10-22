@@ -1,0 +1,10 @@
+{
+  "name": "Taller4-Angular",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm --prefix primer-proyecto install",
+    "start": "npm --prefix primer-proyecto start"
+  }
+}
+
+
